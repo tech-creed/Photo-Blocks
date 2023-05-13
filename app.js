@@ -26,6 +26,6 @@ app.get('/',(req,res)=>{
 })
 
 app.use('', (req, res) => {
-    res.status(404).send('URL not found !')
+    res.render('404')
 })
 
