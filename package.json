@@ -1,0 +1,25 @@
+{
+  "name": "photo-blocks",
+  "version": "1.0.0",
+  "description": "The DApp for photographers built on a ETH Network with IPFS to authenticate ownership for the work of photographers. Also photographers can showcase their photographies to consumers for hiring them for an event and also helps the photographers to mint their photographies to NFT and our platform acts as a marketplace for that NFT's.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tech-creed/Photo-Blocks.git"
+  },
+  "author": "MUKILAN S, TENSHKUMAR K, MADAVAN K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tech-creed/Photo-Blocks/issues"
+  },
+  "homepage": "https://github.com/tech-creed/Photo-Blocks#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
