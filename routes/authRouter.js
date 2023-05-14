@@ -1,8 +1,8 @@
 const express = require("express");
-const { apiInit } = require("../controllers/apiController");
+const { authInit } = require("../controllers/authController");
 
 const router = express.Router();
 
-router.get("", apiInit);
+router.get("", authInit);
 
 module.exports = router;

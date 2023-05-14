@@ -1,947 +1,212 @@
-    <%- include('./partials/header.ejs') -%>
-    <header class="header navbar-area">
-        <div class=container>
-            <div class="row align-items-center">
-                <div class=col-lg-12>
-                    <div class=nav-inner>
+<%- include('./partials/header.ejs') -%>
+    <%- include('partials/nav-bar') -%>
 
-                        <nav class="navbar navbar-expand-lg">
-                            <a class=navbar-brand href='/'>
-                                <script data-pagespeed-no-defer>
-                                    (function () { for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function (b, c, a) { if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters."); b != Array.prototype && b != Object.prototype && (b[c] = a.value) }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) { var m = k[l]; m in h || (h[m] = {}); h = h[m] } var n = k[k.length - 1], p = h[n], q = p ? p : function (b) { var c; if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined"); c = this + ""; if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value"); b |= 0; for (var a = ""; b;)if (b & 1 && (a += c), b >>>= 1) c += c; return a }; q != p && null != q && g(h, n, { configurable: !0, writable: !0, value: q }); var t = this; function u(b, c) { var a = b.split("."), d = t; a[0] in d || !d.execScript || d.execScript("var " + a[0]); for (var e; a.length && (e = a.shift());)a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c }; function v(b) { var c = b.length; if (0 < c) { for (var a = Array(c), d = 0; d < c; d++)a[d] = b[d]; return a } return [] }; function w(b) { var c = window; if (c.addEventListener) c.addEventListener("load", b, !1); else if (c.attachEvent) c.attachEvent("onload", b); else { var a = c.onload; c.onload = function () { b.call(this); a && a.call(this) } } }; var x; function y(b, c, a, d, e) { this.h = b; this.j = c; this.l = a; this.f = e; this.g = { height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight, width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth }; this.i = d; this.b = {}; this.a = []; this.c = {} } function z(b, c) { var a, d, e = c.getAttribute("data-pagespeed-url-hash"); if (a = e && !(e in b.c)) if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1; else { d = c.getBoundingClientRect(); var f = document.body; a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop); d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft); f = a.toString() + "," + d; b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width) } a && (b.a.push(e), b.c[e] = !0) } y.prototype.checkImageForCriticality = function (b) { b.getBoundingClientRect && z(this, b) }; u("pagespeed.CriticalImages.checkImageForCriticality", function (b) { x.checkImageForCriticality(b) }); u("pagespeed.CriticalImages.checkCriticalImages", function () { A(x) }); function A(b) { b.b = {}; for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d)a = a.concat(v(document.getElementsByTagName(c[d]))); if (a.length && a[0].getBoundingClientRect) { for (d = 0; c = a[d]; ++d)z(b, c); a = "oh=" + b.l; b.f && (a += "&n=" + b.f); if (c = !!b.a.length) for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) { var e = "," + encodeURIComponent(b.a[d]); 131072 >= a.length + e.length && (a += e) } b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0); C = a; if (c) { d = b.h; b = b.j; var f; if (window.XMLHttpRequest) f = new XMLHttpRequest; else if (window.ActiveXObject) try { f = new ActiveXObject("Msxml2.XMLHTTP") } catch (r) { try { f = new ActiveXObject("Microsoft.XMLHTTP") } catch (D) { } } f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a)) } } } function B() { var b = {}, c; c = document.getElementsByTagName("IMG"); if (!c.length) return {}; var a = c[0]; if (!("naturalWidth" in a && "naturalHeight" in a)) return {}; for (var d = 0; a = c[d]; ++d) { var e = a.getAttribute("data-pagespeed-url-hash"); e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = { rw: a.width, rh: a.height, ow: a.naturalWidth, oh: a.naturalHeight }) } return b } var C = ""; u("pagespeed.CriticalImages.getBeaconData", function () { return C }); u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) { var r = new y(b, c, a, e, f); x = r; d && w(function () { window.setTimeout(function () { A(r) }, 0) }) }); })(); pagespeed.CriticalImages.Run('/ngx_pagespeed_beacon', 'https://preview.uideck.com/items/cryptoland/', 'RCCUltOb55', true, false, 'wtZ_KXWt_Ag');
-                                </script>
-                                <!-- <img src="" alt=Logo data-pagespeed-url-hash=2570727644
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                            </a>
-                            <button class="navbar-toggler mobile-menu-btn" type=button data-bs-toggle=collapse
-                                data-bs-target="#navbarSupportedContent" aria-controls=navbarSupportedContent
-                                aria-expanded=false aria-label="Toggle navigation">
-                                <span class=toggler-icon></span>
-                                <span class=toggler-icon></span>
-                                <span class=toggler-icon></span>
-                            </button>
-                            <div class="collapse navbar-collapse sub-menu-bar" id=navbarSupportedContent>
-                                <ul id=nav class="navbar-nav ms-auto">
-                                    <li class=nav-item>
-                                        <a href='/' class=active aria-label="Toggle navigation">Home</a>
-                                    </li>
-                                    <li class=nav-item>
-                                        <a href=about-us.html aria-label="Toggle navigation">About</a>
-                                    </li>
-                                    <li class=nav-item>
-                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle=collapse
-                                            data-bs-target="#submenu-1-1" aria-controls=navbarSupportedContent
-                                            aria-expanded=false aria-label="Toggle navigation">Pages</a>
-                                        <ul class="sub-menu collapse" id=submenu-1-1>
-                                            <li class=nav-item><a href=about-us.html>About Us</a></li>
-                                            <li class=nav-item><a href=signin.html>Sign In</a></li>
-                                            <li class=nav-item><a href=signup.html>Sign Up</a></li>
-                                            <li class=nav-item><a href=reset-password.html>Reset Password</a>
-                                            <li class=nav-item><a href=mail-success.html>Mail Success</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=nav-item>
-                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle=collapse
-                                            data-bs-target="#submenu-1-2" aria-controls=navbarSupportedContent
-                                            aria-expanded=false aria-label="Toggle navigation">Blog</a>
-                                        <ul class="sub-menu collapse" id=submenu-1-2>
-                                            <li class=nav-item><a href=blog-grid.html>Blog Grid</a>
-                                            </li>
-                                            <li class=nav-item><a href=blog-single.html>Blog Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=nav-item>
-                                        <a href=contact.html aria-label="Toggle navigation">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class=button>
-                                <a href=signup.html class=btn>Get started</a>
-                            </div>
-                        </nav>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-    <section class=hero-area>
-        <!-- <img class=hero-shape src="assets/images/hero/hero-shape.svg" alt="#" data-pagespeed-url-hash=1444126576
-            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-        <div class=container>
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-md-12 col-12">
-                    <div class=hero-content>
-                        <h4 class="wow fadeInUp" data-wow-delay=.2s>Start Envesting & Earn Money</h4>
-                        <h1 class="wow fadeInUp" data-wow-delay=.4s>Say goodbye
-                            to <br>idle
-                            <span>
-                                <!-- <img class=text-shape src="assets/images/hero/text-shape.svg" alt="#"
-                                    data-pagespeed-url-hash=50555011
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                                money.
-                            </span>
-                        </h1>
-                        <p class="wow fadeInUp" data-wow-delay=.6s>Invest your spare change in Bitcoin and save
-                            with<br> crypto to e arn interest in real time.
-                        </p>
-                        <div class="button wow fadeInUp" data-wow-delay=.8s>
-                            <a href=about-us.html class="btn ">Discover More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-12">
-                    <div class=hero-image>
-                        <!-- <img class=main-image src="assets/images/hero/xhome2-bg.png.pagespeed.ic.hF0EvdJkkq.webp"
-                            alt="#" data-pagespeed-url-hash=791220678
-                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        <img class=h2-move-1 src="assets/images/hero/xh2-bit-l.png.pagespeed.ic.4zUfmPmBzZ.webp" alt="#"
-                            data-pagespeed-url-hash=2003544880
-                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        <img class=h2-move-2 src="assets/images/hero/xh2-bit-m.png.pagespeed.ic.sUGZxkIncx.webp" alt="#"
-                            data-pagespeed-url-hash=2298044801
-                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                        <img class=h2-move-3 src="assets/images/hero/xh2-bit-s.png.pagespeed.ic.VYmCsbZsx_.webp" alt="#"
-                            data-pagespeed-url-hash=4065044327
-                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="feature section">
-        <div class=container>
-            <div class=row>
-                <div class=col-12>
-                    <div class=section-title>
-                        <h3 class="wow zoomIn" data-wow-delay=.2s>Why choose us</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=.4s>Our features</h2>
-                        <p class="wow fadeInUp" data-wow-delay=.6s>There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
-                    </div>
-                </div>
-            </div>
-            <div class=row>
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=.2s>
-                    <div class=feature-box>
-                        <div class=tumb>
-                            <!-- <img src="assets/images/features/xfeature-icon-1.png.pagespeed.ic.h3D7JPwMSt.webp" alt=""
-                                data-pagespeed-url-hash=787695420
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                        </div>
-                        <h4 class=text-title>Instant Exchage</h4>
-                        <p>Invest in Bitcoin on the regular or save with one of the highest interest rates on the
-                            market.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=.4s>
-                    <div class=feature-box>
-                        <div class=tumb>
-                            <!-- <img src="assets/images/features/xfeature-icon-2.png.pagespeed.ic.FQ-SA3E864.webp" alt=""
-                                data-pagespeed-url-hash=1082195341
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                        </div>
-                        <h4 class=text-title>Safe & Secure</h4>
-                        <p>Invest in Bitcoin on the regular or save with one of the highest interest rates on the
-                            market.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=.6s>
-                    <div class=feature-box>
-                        <div class=tumb>
-                            <!-- <img src="assets/images/features/xfeature-icon-3.png.pagespeed.ic.r-g_Ji307C.webp" alt=""
-                                data-pagespeed-url-hash=1376695262
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                        </div>
-                        <h4 class=text-title>Instant Trading</h4>
-                        <p>Invest in Bitcoin on the regular or save with one of the highest interest rates on the
-                            market.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <section class="start-process section">
-        <div class=container>
-            <div class=row>
-                <div class=col-12>
-                    <div class=section-title>
-                        <h3 class="wow zoomIn" data-wow-delay=.2s>Ready to get started?</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=.4s>3 Steps To Start</h2>
-                        <p class="wow fadeInUp" data-wow-delay=.6s>There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
-                    </div>
-                </div>
-            </div>
-            <div class=row>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class=single-process>
-                        <span class=serial>01</span>
-                        <h3>Create Your Wallet</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos consectetur tidio.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class=single-process>
-                        <span class=serial>02</span>
-                        <h3>Make Payment</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos consectetur tidio.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class=single-process>
-                        <span class=serial>03</span>
-                        <h3>Buy & Sell Coins</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos consectetur tidio.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="team section">
-        <div class=container>
-            <div class=row>
-                <div class=col-12>
-                    <div class=section-title>
-                        <h3 class="wow zoomIn" data-wow-delay=.2s>Expert Team</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=.4s>Meet Our Team</h2>
-                        <p class="wow fadeInUp" data-wow-delay=.6s>There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
-                    </div>
-                </div>
-            </div>
-            <div class=row>
-                <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=.3s>
-
-                    <div class=single-team>
-                        <div class=team-image>
-                            <!-- <img src="assets/images/team/xteam4.jpg.pagespeed.ic.tgKiF0qSiP.webp" alt="#"
-                                data-pagespeed-url-hash=1130295177
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                        </div>
-                        <div class=content>
-                            <h4>Deco Milan
-                                <span>Founder</span>
-                            </h4>
-                            <ul class=social>
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=.5s>
-
-                    <div class=single-team>
-                        <div class=team-image>
-                            <!-- <img src="assets/images/team/xteam1.jpg.pagespeed.ic.gaAyYtHOuG.webp" alt="#"
-                                data-pagespeed-url-hash=246795414
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                        </div>
-                        <div class=content>
-                            <h4>Liza Marko
-                                <span>Developer</span>
-                            </h4>
-                            <ul class=social>
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=.7s>
-
-                    <div class=single-team>
-                        <div class=team-image>
-                            <!-- <img src="assets/images/team/xteam2.jpg.pagespeed.ic.mQyiaG4fCn.webp" alt="#"
-                                data-pagespeed-url-hash=541295335
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                        </div>
-                        <div class=content>
-                            <h4>John Smith
-                                <span>Designer</span>
-                            </h4>
-                            <ul class=social>
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=.9s>
-
-                    <div class=single-team>
-                        <div class=team-image>
-                            <!-- <img src="assets/images/team/xteam3.jpg.pagespeed.ic.8pUwCW_KiC.webp" alt="#"
-                                data-pagespeed-url-hash=835795256
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                        </div>
-                        <div class=content>
-                            <h4>Amion Doe
-                                <span>Co-Founder</span>
-                            </h4>
-                            <ul class=social>
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="intro-video-area section">
-        <div class=container>
-            <div class=row>
-                <div class=col-12>
-                    <div class=inner-content-head>
-                        <div class=inner-content>
-                            <!-- <img class=shape1 src="assets/images/video/shape1.svg" alt="#"
-                                data-pagespeed-url-hash=2173334083
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                            <img class=shape2 src="assets/images/video/shape2.svg" alt="#"
-                                data-pagespeed-url-hash=2467834004
-                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                            <div class=section-title>
-                                <span class="wow zoomIn" data-wow-delay=.2s>Create your own experience</span>
-                                <h2 class="wow fadeInUp" data-wow-delay=.4s>Watch Our intro video</h2>
-                                <p class="wow fadeInUp" data-wow-delay=.6s>There are many variations of passages of
-                                    Lorem
-                                    Ipsum available, but the majority have suffered alteration in some form.</p>
-                            </div>
-                            <div class=intro-video-play>
-                                <div class="play-thumb wow zoomIn" data-wow-delay=.2s>
-                                    <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
-                                        class="glightbox video"><i class="lni lni-play"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="road-map section">
-        <div class=container>
-            <div class=row>
-                <div class=col-12>
-                    <div class=section-title>
-                        <h2 class="wow fadeInUp" data-wow-delay=.4s>Road Map</h2>
-                        <p class="wow fadeInUp" data-wow-delay=.6s>There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
-                    </div>
-                </div>
-            </div>
-            <div class=top-row>
-                <div class="">
-                    <div class="row road-map-slider">
-                        <div class="col-lg-2 col-md-3 col-12 p-0">
-
-                            <div class="single-map down">
-                                <span class=arrow></span>
-                                <h3>Apr 10,2018
-                                    <span>Development Started</span>
-                                </h3>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 p-0">
-
-                            <div class=single-map>
-                                <span class=arrow></span>
-                                <h3>May 15,2018
-                                    <span>Exchange Bitcontent to Bitcoin</span>
-                                </h3>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 p-0">
-
-                            <div class="single-map down">
-                                <span class=arrow></span>
-                                <h3>Jan 05,2018
-                                    <span>BTCC mode of payment</span>
-                                </h3>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 p-0">
-
-                            <div class=single-map>
-                                <span class=arrow></span>
-                                <h3>Mar 210,2019
-                                    <span>Send-Receive coin Bitconcent & mobile</span>
-                                </h3>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 p-0">
-
-                            <div class="single-map down">
-                                <span class=arrow></span>
-                                <h3>Feb 25,2020
-                                    <span>Coin Marketcap, World Coin Index</span>
-                                </h3>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 p-0">
-
-                            <div class=single-map>
-                                <span class=arrow></span>
-                                <h3>Dec 22,2020
-                                    <span>BTCC mode of payment in Bitcoin</span>
-                                </h3>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 p-0">
-
-                            <div class="single-map down">
-                                <span class=arrow></span>
-                                <h3>Feb 25,2020
-                                    <span>Coin Marketcap, World Coin Index</span>
-                                </h3>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 p-0">
-
-                            <div class=single-map>
-                                <span class=arrow></span>
-                                <h3>Jan 05,2018
-                                    <span>BTCC mode of payment</span>
-                                </h3>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 p-0">
-
-                            <div class="single-map down">
-                                <span class=arrow></span>
-                                <h3>May 15,2018
-                                    <span>Exchange Bitcontent to Bitcoin</span>
-                                </h3>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 p-0">
-
-                            <div class=single-map>
-                                <span class=arrow></span>
-                                <h3>Dec 22,2020
-                                    <span>BTCC mode of payment in Bitcoin</span>
-                                </h3>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="testimonials style2 section">
-        <div class=container>
-            <div class=row>
-                <div class=col-12>
-                    <div class=section-title>
-                        <h3 class="wow zoomIn" data-wow-delay=.2s>Customer Reviews</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=.4s>Our Testimonials</h2>
-                        <p class="wow fadeInUp" data-wow-delay=.6s>There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row testimonial-slider">
-                <div class="col-lg-6 col-12 ">
-
-                    <div class=single-testimonial>
-                        <div class=inner-content>
-                            <div class=quote-icon>
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class=text>
-                                <p>“A vast number of clients decide to create dedicated software is the
-                                    online store. It is nothing but a website with a catalog of products and the
-                                    possibility.”</p>
-                            </div>
-                            <div class=author>
-                                <!-- <img src="assets/images/testimonial/xtesti-1.png.pagespeed.ic.vRzDhvqZb4.webp" alt="#"
-                                    data-pagespeed-url-hash=19542513
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                                <h4 class=name>Somalia D Silva
-                                    <span class=deg>Business Manager</span>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 col-12 ">
-
-                    <div class=single-testimonial>
-                        <div class=inner-content>
-                            <div class=quote-icon>
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class=text>
-                                <p>“A vast number of clients decide to create dedicated software is the
-                                    online store. It is nothing but a website with a catalog of products and the
-                                    possibility.”</p>
-                            </div>
-                            <div class=author>
-                                <!-- <img src="assets/images/testimonial/xtesti-2.png.pagespeed.ic.mbqQA3fuhA.webp" alt="#"
-                                    data-pagespeed-url-hash=314042434
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                                <h4 class=name>David Warner
-                                    <span class=deg>Blockchain Developer</span>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 col-12 ">
-
-                    <div class=single-testimonial>
-                        <div class=inner-content>
-                            <div class=quote-icon>
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class=text>
-                                <p>“A vast number of clients decide to create dedicated software is the
-                                    online store. It is nothing but a website with a catalog of products and the
-                                    possibility.”</p>
-                            </div>
-                            <div class=author>
-                                <!-- <img src="assets/images/testimonial/xtesti-3.png.pagespeed.ic.Qa9ut5l2KN.webp" alt="#"
-                                    data-pagespeed-url-hash=608542355
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                                <h4 class=name>Jems Gilario
-                                    <span class=deg>Graphics Designer</span>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 col-12 ">
-
-                    <div class=single-testimonial>
-                        <div class=inner-content>
-                            <div class=quote-icon>
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class=text>
-                                <p>“A vast number of clients decide to create dedicated software is the
-                                    online store. It is nothing but a website with a catalog of products and the
-                                    possibility.”</p>
-                            </div>
-                            <div class=author>
-                                <!-- <img src="assets/images/testimonial/xtesti-2.png.pagespeed.ic.mbqQA3fuhA.webp" alt="#"
-                                    data-pagespeed-url-hash=314042434
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                                <h4 class=name>David Warner
-                                    <span class=deg>Web Developer</span>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 col-12 ">
-
-                    <div class=single-testimonial>
-                        <div class=inner-content>
-                            <div class=quote-icon>
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class=text>
-                                <p>“A vast number of clients decide to create dedicated software is the
-                                    online store. It is nothing but a website with a catalog of products and the
-                                    possibility.”</p>
-                            </div>
-                            <div class=author>
-                                <!-- <img src="assets/images/testimonial/xtesti-3.png.pagespeed.ic.Qa9ut5l2KN.webp" alt="#"
-                                    data-pagespeed-url-hash=608542355
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                                <h4 class=name>Jems Gilario
-                                    <span class=deg>Graphics Designer</span>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="blog-section section">
-        <div class=container>
-            <div class=row>
-                <div class=col-12>
-                    <div class=section-title>
-                        <h3 class="wow zoomIn" data-wow-delay=.2s>Blogs</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=.4s>Our Latest News</h2>
-                        <p class="wow fadeInUp" data-wow-delay=.6s>There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
-                    </div>
-                </div>
-            </div>
-            <div class=row>
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=.4s>
-
-                    <div class=single-blog-grid>
-                        <div class=blog-img>
-                            <a href=blog-single.html>
-                                <!-- <img src="assets/images/blog/xblog-1.png.pagespeed.ic.Ok4VTlUUoM.webp" alt="#"
-                                    data-pagespeed-url-hash=1735744405
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                            </a>
-                        </div>
-                        <div class=blog-content>
-                            <div class=meta-info>
-                                <a class=date href="javascript:void(0)"><i class="lni lni-timer"></i> 10 June 2023
-                                </a>
-                                <a class=author href="javascript:void(0)"><i class="lni lni-user"></i> Anjelio Joly
-                                </a>
-                            </div>
-                            <h4>
-                                <a href=blog-single.html>The Intersection Where Blockchain Meets Energy.</a>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, adipscing elitr, sit gifted sed diam nonumy eirmod tempor
-                                ividunt dolore.</p>
-                            <div class=button>
-                                <a href=blog-single.html class=btn>Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=.6s>
-
-                    <div class=single-blog-grid>
-                        <div class=blog-img>
-                            <a href=blog-single.html>
-                                <!-- <img src="assets/images/blog/xblog-2.png.pagespeed.ic.PHEMAoMqoQ.webp" alt="#"
-                                    data-pagespeed-url-hash=2030244326
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                            </a>
-                        </div>
-                        <div class=blog-content>
-                            <div class=meta-info>
-                                <a class=date href="javascript:void(0)"><i class="lni lni-timer"></i> 5 Aug 2023
-                                </a>
-                                <a class=author href="javascript:void(0)"><i class="lni lni-user"></i> Kumila ksusi
-                                </a>
-                            </div>
-                            <h4>
-                                <a href=blog-single.html>Pros & Cons of Premined Cryptocurrencies.</a>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, adipscing elitr, sit gifted sed diam nonumy eirmod tempor
-                                ividunt dolore.</p>
-                            <div class=button>
-                                <a href=blog-single.html class=btn>Read Blog</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=.8s>
-
-                    <div class=single-blog-grid>
-                        <div class=blog-img>
-                            <a href=blog-single.html>
-                                <!-- <img src="assets/images/blog/xblog-3.png.pagespeed.ic.KoWVzDzKLK.webp" alt="#"
-                                    data-pagespeed-url-hash=2324744247
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-                            </a>
-                        </div>
-                        <div class=blog-content>
-                            <div class=meta-info>
-                                <a class=date href="javascript:void(0)"><i class="lni lni-timer"></i> 25 Dec 2023
-                                </a>
-                                <a class=author href="javascript:void(0)"><i class="lni lni-user"></i> Alex Jendro
-                                </a>
-                            </div>
-                            <h4>
-                                <a href=blog-single.html>How & Where To Market Your ICO Startup.</a>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, adipscing elitr, sit gifted sed diam nonumy eirmod tempor
-                                ividunt dolore.</p>
-                            <div class=button>
-                                <a href=blog-single.html class=btn>Read Blog</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="faq section">
-        <div class=container>
-            <div class=row>
-                <div class=col-12>
-                    <div class=section-title>
-                        <h3 class="wow zoomIn" data-wow-delay=.2s>Faq</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=.4s>frequently asked questions</h2>
-                        <p class="wow fadeInUp" data-wow-delay=.6s>There are many variations of passages of Lorem
-                            Ipsum available, but the majority have
-                            suffered alteration in some form.</p>
-                    </div>
-                </div>
-            </div>
-            <div class=row>
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class=accordion id=accordionExample>
-                        <div class=accordion-item>
-                            <h2 class=accordion-header id=heading1>
-                                <button class="accordion-button collapsed" type=button data-bs-toggle=collapse
-                                    data-bs-target="#collapse1" aria-expanded=false aria-controls=collapse1>
-                                    <span class=title>How can I participate in the ICO Token sale?</span><i
-                                        class="lni lni-plus"></i>
-                                </button>
-                            </h2>
-                            <div id=collapse1 class="accordion-collapse collapse" aria-labelledby=heading1
-                                data-bs-parent="#accordionExample">
-                                <div class=accordion-body>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sit
-                                        amet ante nec vulputate. Nulla aliquam, justo auctor consequat tincidunt, arcu
-                                        erat mattis lorem.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sit
-                                        amet ante nec vulputate.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=accordion-item>
-                            <h2 class=accordion-header id=heading2>
-                                <button class="accordion-button collapsed" type=button data-bs-toggle=collapse
-                                    data-bs-target="#collapse2" aria-expanded=false aria-controls=collapse2>
-                                    <span class=title>What cryptocurrencies can I use to purchase?</span><i
-                                        class="lni lni-plus"></i>
-                                </button>
-                            </h2>
-                            <div id=collapse2 class="accordion-collapse collapse" aria-labelledby=heading2
-                                data-bs-parent="#accordionExample">
-                                <div class=accordion-body>
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor
-                                        brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt alqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim ke ffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=accordion-item>
-                            <h2 class=accordion-header id=heading3>
-                                <button class="accordion-button collapsed" type=button data-bs-toggle=collapse
-                                    data-bs-target="#collapse3" aria-expanded=false aria-controls=collapse3>
-                                    <span class=title>Do I need an account to place an order?</span><i
-                                        class="lni lni-plus"></i>
-                                </button>
-                            </h2>
-                            <div id=collapse3 class="accordion-collapse collapse" aria-labelledby=heading3
-                                data-bs-parent="#accordionExample">
-                                <div class=accordion-body>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas expedita,
-                                        repellendus est nemo cum quibusdam optio, voluptate hic a tempora facere, nihil
-                                        non itaque alias similique quas quam odit consequatur.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12 xs-margin">
-                    <div class=accordion id=accordionExample2>
-                        <div class=accordion-item>
-                            <h2 class=accordion-header id=heading11>
-                                <button class="accordion-button collapsed" type=button data-bs-toggle=collapse
-                                    data-bs-target="#collapse11" aria-expanded=false aria-controls=collapse11>
-                                    <span class=title>How can i purchase bitcoin?</span><i class="lni lni-plus"></i>
-                                </button>
-                            </h2>
-                            <div id=collapse11 class="accordion-collapse collapse" aria-labelledby=heading11
-                                data-bs-parent="#accordionExample2">
-                                <div class=accordion-body>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sit
-                                        amet ante nec vulputate. Nulla aliquam, justo auctor consequat tincidunt, arcu
-                                        erat mattis lorem.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sit
-                                        amet ante nec vulputate.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=accordion-item>
-                            <h2 class=accordion-header id=heading22>
-                                <button class="accordion-button collapsed" type=button data-bs-toggle=collapse
-                                    data-bs-target="#collapse22" aria-expanded=false aria-controls=collapse22>
-                                    <span class=title>What is ICO Crypto?</span><i class="lni lni-plus"></i>
-                                </button>
-                            </h2>
-                            <div id=collapse22 class="accordion-collapse collapse" aria-labelledby=heading22
-                                data-bs-parent="#accordionExample2">
-                                <div class=accordion-body>
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor
-                                        brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt alqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim ke ffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=accordion-item>
-                            <h2 class=accordion-header id=heading33>
-                                <button class="accordion-button collapsed" type=button data-bs-toggle=collapse
-                                    data-bs-target="#collapse33" aria-expanded=false aria-controls=collapse33>
-                                    <span class=title>How do I benefit from the ICO Token?</span><i
-                                        class="lni lni-plus"></i>
-                                </button>
-                            </h2>
-                            <div id=collapse33 class="accordion-collapse collapse" aria-labelledby=heading33
-                                data-bs-parent="#accordionExample2">
-                                <div class=accordion-body>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas expedita,
-                                        repellendus est nemo cum quibusdam optio, voluptate hic a tempora facere, nihil
-                                        non itaque alias similique quas quam odit consequatur.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="footer section">
-
-        <div class=footer-top>
+        <section class=hero-area>
             <div class=container>
-                <div class=inner-content>
-                    <div class=row>
-                        <div class="col-lg-4 col-md-6 col-12">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <div class=hero-content>
+                            <h4 class="wow fadeInUp" data-wow-delay=.2s>Secure and Monetize your photography with NFTs.
+                            </h4>
+                            <h1 class="wow fadeInUp" data-wow-delay=.4s>Photography Revolutionized with <br>
+                                <span>
+                                    <img class=text-shape src="assets/text-shape.png" alt="#"
+                                        data-pagespeed-url-hash=50555011
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    PhotoBlocks.
+                                </span>
+                            </h1>
+                            <p class="wow fadeInUp" data-wow-delay=.6s>Join Photoblocks to Secure your work on the
+                                Ethereum blockchain. Turn your photos into valuable NFT assets for sale and take your
+                                photography business to the next level.
+                            </p>
+                            <div class="button wow fadeInUp" data-wow-delay=.8s>
+                                <a href='/about-us' class="btn ">Explore the Platform</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class=hero-image>
+                            <img class=main-image src="assets/land-img.png" alt="#" data-pagespeed-url-hash=1444126576
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <div class="single-footer f-about">
-                                <div class=logo>
-                                    <a href='/'>
-                                        <!-- <img src="assets/images/logo/white-logo.svg" alt="#"
-                                            data-pagespeed-url-hash=2570727644
-                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
+        <div class="feature section">
+            <div class=container>
+                <div class=row>
+                    <div class=col-12>
+                        <div class=section-title>
+                            <h3 class="wow zoomIn" data-wow-delay=.2s>Why choose us</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay=.4s>Our features</h2>
+                            <p class="wow fadeInUp" data-wow-delay=.6s>Experience the power of decentralized photography
+                                with our unique features.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=row>
+                    <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=.2s>
+                        <div class=feature-box>
+                            <div class=tumb>
+                                <img src="assets/ipfs-rights.png" alt="" data-pagespeed-url-hash=787695420
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                            <h4 class=text-title>Secure Intellectual Property Protection</h4>
+                            <p>By leveraging the Ethereum blockchain and IPFS, Photoblocks provides a secure way for
+                                photographers to protect their intellectual property rights. This feature can help
+                                photographers feel confident in their work being protected while also making it easier
+                                to monetize their photos.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=.4s>
+                        <div class=feature-box>
+                            <div class=tumb>
+                                <img src="assets/nft-marketplace.png" alt="" data-pagespeed-url-hash=1082195341
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                            <h4 class=text-title>Easy NFT Creation and Marketplace</h4>
+                            <p>Photoblocks allows photographers to easily create NFTs from their photos and sell them on
+                                the platform's marketplace. This feature can make it simpler for photographers to enter
+                                the world of NFTs and earn revenue from their work.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=.6s>
+                        <div class=feature-box>
+                            <div class=tumb>
+                                <img src="assets/hiring-photographers.png" alt="" data-pagespeed-url-hash=1376695262
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                            <h4 class=text-title>Hassle-free Hiring of Photographers</h4>
+                            <p>Through the Photoblocks platform, consumers can easily hire photographers for events and
+                                other projects. This feature can simplify the process of finding and hiring a
+                                photographer, making it more accessible for individuals and businesses alike.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="start-process section">
+            <div class=container>
+                <div class=row>
+                    <div class=col-12>
+                        <div class=section-title>
+                            <h3 class="wow zoomIn" data-wow-delay=.2s>Ready to get started?</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay=.4s>3 Steps To Start</h2>
+                            <p class="wow fadeInUp" data-wow-delay=.6s>Are you ready to revolutionize your photography
+                                business? With PhotoBlocks, you can secure your work on the Ethereum blockchain and turn
+                                your photos into valuable NFT assets. Here's how it works.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=row>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class=single-process>
+                            <span class=serial>01</span>
+                            <h3>Get started with Photoblocks for free</h3>
+                            <p>Sign up for free and connect your Ethereum wallet.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class=single-process>
+                            <span class=serial>02</span>
+                            <h3>Turn your photos into valuable NFT assets</h3>
+                            <p>Upload your photos and mint them as NFTs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class=single-process>
+                            <span class=serial>03</span>
+                            <h3>Join our NFT marketplace and start earning</h3>
+                            <p>Sell your NFTs on our marketplace and earn revenue.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-video-area section">
+            <div class=container>
+                <div class=row>
+                    <div class=col-12>
+                        <div class=inner-content-head>
+                            <div class=inner-content>
+                                <img class=shape1 src="assets/blue-circle.png" alt="#"
+                                    data-pagespeed-url-hash=2173334083
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                <img class=shape2 src="assets/blue-circle.png" alt="#"
+                                    data-pagespeed-url-hash=2467834004
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                <div class=section-title>
+                                    <span class="wow zoomIn" data-wow-delay=.2s>Discover the Future of Photography with
+                                        PhotoBlocks</span>
+                                    <h2 class="wow fadeInUp" data-wow-delay=.4s>Watch our Introductory Video</h2>
+                                    <p class="wow fadeInUp" data-wow-delay=.6s>Learn more about Photoblocks and how
+                                        we're revolutionizing the photography industry. Watch our introductory video to
+                                        discover how you can secure your work, monetize your photos, and sell them as
+                                        valuable NFT assets on our decentralized platform.</p>
+                                </div>
+                                <div class=intro-video-play>
+                                    <div class="play-thumb wow zoomIn" data-wow-delay=.2s>
+                                        <a href=""
+                                            class="glightbox video"><i class="lni lni-play"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section section">
+            <div class=container>
+                <div class=row>
+                    <div class=col-12>
+                        <div class=section-title>
+                            <h3 class="wow zoomIn" data-wow-delay=.2s>Blogs</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay=.4s>Our Latest News</h2>
+                            <p class="wow fadeInUp" data-wow-delay=.6s>Stay up-to-date with the latest news and insights
+                                on PhotoBlocks through our informative blog. From industry trends to expert tips, we've
+                                got you covered.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=row>
+                    <div class="col-12 wow fadeInUp" data-wow-delay=.4s>
+
+                        <div class=single-blog-grid>
+                            <div class=blog-img>
+                                <a href="">
+                                    <img src="assets/blog-img.jpg" alt="blog image" data-pagespeed-url-hash=1735744405
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </a>
+                            </div>
+                            <div class=blog-content>
+                                <div class=meta-info>
+                                    <a class=date href="javascript:void(0)"><i class="lni lni-timer"></i> 14 May 2023
+                                    </a>
+                                    <a class=author href="javascript:void(0)"><i class="lni lni-user"></i> TechCreed
                                     </a>
                                 </div>
-                                <p>Making the world a better place through constructing elegant hierarchies.</p>
-                                <h4 class=social-title>Follow Us On:</h4>
-                                <ul class=social>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-pinterest"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
-                                </ul>
+                                <h4>
+                                    <a href="">Lorem ipsum dolor sit amet, adipscing elitr.</a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, adipscing elitr, sit gifted sed diam nonumy eirmod tempor
+                                    ividunt dolore.</p>
+                                <div class=button>
+                                    <a href="" class=btn>Read More</a>
+                                </div>
                             </div>
-
                         </div>
-                        <div class="col-lg-2 col-md-6 col-12">
 
-                            <div class="single-footer f-link">
-                                <h3>Solutions</h3>
-                                <ul>
-                                    <li><a href="javascript:void(0)">Marketing</a></li>
-                                    <li><a href="javascript:void(0)">Analytics</a></li>
-                                    <li><a href="javascript:void(0)">Commerce</a></li>
-                                    <li><a href="javascript:void(0)">Insights</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-6 col-12">
-
-                            <div class="single-footer f-link">
-                                <h3>Support</h3>
-                                <ul>
-                                    <li><a href="javascript:void(0)">Pricing</a></li>
-                                    <li><a href="javascript:void(0)">Documentation</a></li>
-                                    <li><a href="javascript:void(0)">Guides</a></li>
-                                    <li><a href="javascript:void(0)">API Status</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-
-                            <div class="single-footer newsletter">
-                                <h3>Subscribe</h3>
-                                <p>Subscribe to our newsletter for the latest updates</p>
-                                <form action="#" method=get target=_blank class=newsletter-form>
-                                    <input name=EMAIL placeholder="Email address" required=required type=email>
-                                    <div class=button>
-                                        <button class=sub-btn><i class="lni lni-envelope"></i>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-
-        <div class=copyright-area>
-            <div class=container>
-                <div class=inner-content>
-                    <div class=row>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <p class=copyright-text>© 2023 CryptoLand - All Rights Reserved</p>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <p class=copyright-owner>Developed by <a href="https://github.com/tech-creed/Photo-Blocks"
-                                    rel=nofollow target=_blank>Techcreed</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-
-    <a href="#" class=scroll-top>
-        <i class="lni lni-chevron-up"></i>
-    </a>
-
-    <%- include('partials/footer') -%>
+        <%- include('partials/footer') -%>

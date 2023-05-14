@@ -28,6 +28,14 @@ app.get('/',(req,res)=>{
     res.render("index")
 })
 
+app.get('/contact',(req,res)=>{
+    res.render('contact')
+})
+
+app.get('/about-us',(req,res)=>{
+    res.render('about-us')
+})
+
 app.use('', (req, res) => {
     res.render('404')
 })

@@ -1035,6 +1035,19 @@ ol {
     position: relative
 }
 
+.logo-nav{
+    font-size: 1.2rem;
+    color: #69f0d2;
+    position: relative;
+    right: 20%;
+}
+.logo-nav-title{
+    font-size: 1.2rem;
+    color: #69f0d2;
+    position: relative;
+    right: 20%;
+}
+
 @media only screen and (min-width:768px) and (max-width:991px) {
     .section {
         padding-top: 70px;
@@ -1681,6 +1694,14 @@ ol {
 
     .header .navbar-nav .nav-item a:hover {
         color: #3e80ff
+    }
+
+    .logo-nav-title{
+        color: #69f0d2;
+    }
+
+    .logo-nav{
+        color:#69f0d2;
     }
 }
 
@@ -4342,104 +4363,6 @@ only screen and (min-width:1400px) {
     .client-logo .single-logo img {
         width: 75%
     }
-}
-
-.team .section-title {
-    margin-bottom: 50px
-}
-
-@media only screen and (min-width:768px) and (max-width:991px),
-(max-width:767px) {
-    .team .section-title {
-        margin-bottom: 30px
-    }
-}
-
-.team .single-team {
-    margin-top: 30px;
-    border-radius: 8px;
-    overflow: hidden;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    text-align: center
-}
-
-.team .single-team img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #eee
-}
-
-.team .single-team .content {
-    padding: 40px 30px
-}
-
-@media (max-width:767px) {
-    .team .single-team .content {
-        display: block;
-        text-align: center;
-        padding: 30px
-    }
-}
-
-.team .single-team .content h4 {
-    font-size: 16px;
-    font-weight: 600
-}
-
-.team .single-team .content h4 span {
-    color: #727272;
-    font-size: 14px;
-    display: block;
-    margin-top: 10px;
-    font-weight: 500;
-    font-family: DM\ Sans
-}
-
-.team .single-team .content .social {
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px)
-}
-
-@media (max-width:767px) {
-    .team .single-team .content .social {
-        margin-top: 20px
-    }
-}
-
-.team .single-team .content .social li {
-    display: inline-block;
-    margin-right: 20px
-}
-
-.team .single-team .content .social li a {
-    font-size: 15px;
-    color: #24126a
-}
-
-.team .single-team .content .social li a:hover {
-    border-color: transparent;
-    color: #3e80ff
-}
-
-.team .single-team .content .social li:last-child {
-    margin-right: 0
-}
-
-.team .single-team:hover .social {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px)
 }
 
 .account-login {
