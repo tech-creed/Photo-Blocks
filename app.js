@@ -14,11 +14,15 @@ app.use(cookieParser())
 
 // routers 
 const AuthenticationRoute = require('./routes/authRoutes.js')
+const IPFSRoute = require('./routes/ipfsRoutes.js')
+
 
 const PORT = process.env.PORT || 9080
 
 
 app.use('/auth', AuthenticationRoute)
+app.use('/ipfs', IPFSRoute)
+
 
 app.listen(PORT, () => {
     console.log("server listening on port " + PORT)
