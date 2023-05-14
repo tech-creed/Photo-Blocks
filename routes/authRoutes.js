@@ -12,7 +12,7 @@ router.post("/login", AuthController.PostLogin)
 router.post("/register", AuthController.PostRegister)
 
 router.get("/dashboard",(req,res)=>{
-    res.render('upload')
+    res.render('dashboard')
 })
 
 router.get('/logout',(req,res)=>{
