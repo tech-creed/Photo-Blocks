@@ -44,8 +44,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" id="co2-update" href="/ipfs/upload">Upload Image</a></li>
-          <li><a class="nav-link scrollto" id="reportLink" href="/ipfs/gallary">View Gallary</a></li>
+          <li><a class="nav-link scrollto" id="reportLink" href="/ipfs/gallary">Market Place</a></li>
           <li><a class="nav-link scrollto" href="/auth/dashboard">Dashboard</a></li>
           <li><a class="getstarted scrollto" href="/auth/logout">Logout</a></li>
         </ul>
@@ -58,11 +57,15 @@
   </header><!-- End Header -->
   <div class="row" style="display: flex;flex-wrap: wrap;height: 50%;justify-content: center;">
   <% for(var i=0; i < walletImages.length; i++) { %>
-    <div class="card col-md-4" style="width: 420px;height: 420px;margin: 12px;">
+    <div class="card col-md-4" style="width: 420px;height: 620px;margin: 12px;">
         <img style="padding: 8px;" height= 320px; class="card-img-top" src="http://127.0.0.1:9090/ipfs/<%=walletImages[i].img_hash%>" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title"><%=walletImages[i].img_description%></h5>
-          <a href="#" class="btn btn-primary">Mint NFT</a>
+          <h5 class="card-title"><b><%=walletImages[i].img_description%></b></h5>
+          <h5 class="card-title"><span style="color:aquamarine">Wallet :</span> <%=walletImages[i].wallet%></h5>
+          <h5 class="card-title"><span style="color:aquamarine">Hash :</span> <%=walletImages[i].img_hash%></h5>
+
+
+          <a href="#" class="btn btn-primary">Contact Owner</a>
         </div>
       </div>
  <% } %>

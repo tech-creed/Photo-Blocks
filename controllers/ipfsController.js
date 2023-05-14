@@ -16,9 +16,15 @@ const GetUpload = async (req, res) => {
 }
 
 const GetGallary = async (req, res) => {
-    db.all(`SELECT * FROM gallary WHERE wallet = ?`,[req.cookies.walletID],(err,result)=>{
-        res.render('gallary', walletImages=result)
-    })
+    if(req.cookies.role == 'Client'){
+        db.all(`SELECT * FROM gallary`,(err,result)=>{
+            res.render('gallary client', walletImages=result)
+        })
+    }else{
+        db.all(`SELECT * FROM gallary WHERE wallet = ?`,[req.cookies.walletID],(err,result)=>{
+            res.render('gallary', walletImages=result)
+        })
+    }
 }
 
 const Upload = async (req, res) => {

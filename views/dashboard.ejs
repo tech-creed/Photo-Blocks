@@ -44,7 +44,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" id="co2-update" href="/ipfs/upload">Upload Image</a></li>
+          <li><a class="nav-link scrollto" id="photo" href="/ipfs/upload">Upload Image</a></li>
           <li><a class="nav-link scrollto" id="reportLink" href="/ipfs/gallary">View Gallary</a></li>
           <li><a class="nav-link scrollto" href="/auth/dashboard">Dashboard</a></li>
           <li><a class="getstarted scrollto" href="/auth/logout">Logout</a></li>
@@ -76,7 +76,7 @@
 
         </div>
         <nav id="navbar" class="navbar" style="display: flex;justify-content: center;">
-          <a class="getstarted scrollto" data-aos="fade-right" id="co2-update-btn" data-aos-delay="800"
+          <a class="getstarted scrollto" data-aos="fade-right" id="photo-btn" data-aos-delay="800"
             href="/mark-co2">Mark Co2 Emission</a>
           <a class="getstarted scrollto" data-aos="fade-left" id="reportLinkBtn" data-aos-delay="800" href="/report-co2">Co2 Report</a>
         </nav>
@@ -107,11 +107,11 @@
     document.getElementById(cookies[0].split('=')[0].trim()).innerHTML = cookies[0].split('=')[1]
     document.getElementById(cookies[1].split('=')[0].trim()).innerHTML = cookies[1].split('=')[1]
     document.getElementById(cookies[2].split('=')[0].trim()).innerHTML = cookies[2].split('=')[1]
-    if (document.getElementById('role').innerHTML == 'Goverment') {
-      document.getElementById('reportLink').href = '/all-emmision'
-      document.getElementById('reportLinkBtn').href = '/all-emmision'
-      document.getElementById('co2-update').style.display = 'none'
-      document.getElementById('co2-update-btn').style.display = 'none'
+    if (document.getElementById('role').innerHTML == 'Client') {
+      document.getElementById('reportLink').href = '/ipfs/gallary'
+      document.getElementById('reportLinkBtn').href = '/ipfs/gallary'
+      document.getElementById('photo').style.display = 'none'
+      document.getElementById('photo-btn').style.display = 'none'
     }
   </script>
 </body>
