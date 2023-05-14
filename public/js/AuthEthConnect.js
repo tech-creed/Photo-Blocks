@@ -39,6 +39,8 @@ App = {
       // Get the Account of the Wallet
       const accounts = await web3.eth.getAccounts();
       App.account = accounts[0];
+      console.log(App.account)
+
       // User Smart Contract
       // Create a JavaScript version of the smart contract
       const user = await $.getJSON('/build/contracts/User.json')
