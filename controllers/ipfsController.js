@@ -17,7 +17,7 @@ const GetUpload = async (req, res) => {
 
 const GetGallary = async (req, res) => {
     db.all(`SELECT * FROM gallary WHERE wallet = ?`,[req.cookies.walletID],(err,result)=>{
-        console.log(result)
+        res.render('gallary', walletImages=result)
     })
 }
 
