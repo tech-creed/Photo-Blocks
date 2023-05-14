@@ -24,6 +24,6 @@
     "express-fileupload": "^1.4.0",
     "ipfs-api": "^26.1.2",
     "nodemon": "^2.0.22",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5.1.6"
   }
 }
