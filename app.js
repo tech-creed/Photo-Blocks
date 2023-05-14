@@ -13,9 +13,12 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 
 // routers 
+const AuthenticationRoute = require('./routes/authRoutes.js')
+
+const PORT = process.env.PORT || 9080
 
 
-const PORT = process.env.PORT || 8080
+app.use('/auth', AuthenticationRoute)
 
 app.listen(PORT, () => {
     console.log("server listening on port " + PORT)
