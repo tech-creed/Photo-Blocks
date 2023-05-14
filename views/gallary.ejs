@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PhotoBlocks</title>
+  <title>Green Chain</title>
   <meta content="" name="description">
 
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/img/favicon.png" rel="icon">
+  <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -29,8 +29,8 @@
 
   <!-- Template Main CSS File -->
   <link href="/css/style.css" rel="stylesheet">
-
-</head>
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="/css/login_register.css">
 
 <body>
 
@@ -38,7 +38,7 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="/auth/dashboard" class="logo d-flex align-items-center">
+      <a href="/dashboard" class="logo d-flex align-items-center">
         <img src="/assets/logo.png" alt="">
       </a>
 
@@ -53,39 +53,21 @@
       </nav><!-- .navbar -->
 
     </div>
+    <h3 style="color: aquamarine;margin-left: 32px;" id="wallet-id"></h3>
+
   </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos=""><u>Wallet ID</u></h1>
-          <h1 data-aos="" id="walletID"></h1>
-          <div style="display: flex;justify-content: space-between;margin-bottom: 64px;margin-top: 34px;">
-            <div>
-              <h1 data-aos="" data-aos-delay="400"><u>Role</u></h1>
-              <h1 data-aos="" data-aos-delay="400" id="role"></h1>
-            </div>
-            <div>
-              <h1 data-aos="" data-aos-delay="600"><u>Name</u></h1>
-              <h1 data-aos="" data-aos-delay="500" id="name"></h1>
-            </div>
-          </div>
-
+  <div class="row" style="display: flex;flex-wrap: wrap;height: 50%;justify-content: center;">
+  <% for(var i=0; i < walletImages.length; i++) { %>
+    <div class="card col-md-4" style="width: 420px;height: 420px;margin: 12px;">
+        <img style="padding: 8px;" height= 320px; class="card-img-top" src="http://127.0.0.1:9090/ipfs/<%=walletImages[i].img_hash%>" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><%=walletImages[i].img_description%></h5>
+          <a href="#" class="btn btn-primary">Mint NFT</a>
         </div>
-        <nav id="navbar" class="navbar" style="display: flex;justify-content: center;">
-          <a class="getstarted scrollto" data-aos="fade-right" id="co2-update-btn" data-aos-delay="800"
-            href="/mark-co2">Mark Co2 Emission</a>
-          <a class="getstarted scrollto" data-aos="fade-left" id="reportLinkBtn" data-aos-delay="800" href="/report-co2">Co2 Report</a>
-        </nav>
-
-
       </div>
+ <% } %>
     </div>
 
-  </section><!-- End Hero -->
   <!-- Vendor JS Files -->
   <script src="/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="/vendor/aos/aos.js"></script>
@@ -101,18 +83,10 @@
 
   <!-- Template Main JS File -->
   <script src="/js/main.js"></script>
-  <script src="/js/ethConnect.js"></script>
+  <script src="/js/ipfsEthConnect.js"></script>
   <script>
     cookies = document.cookie.split(';')
-    document.getElementById(cookies[0].split('=')[0].trim()).innerHTML = cookies[0].split('=')[1]
-    document.getElementById(cookies[1].split('=')[0].trim()).innerHTML = cookies[1].split('=')[1]
-    document.getElementById(cookies[2].split('=')[0].trim()).innerHTML = cookies[2].split('=')[1]
-    if (document.getElementById('role').innerHTML == 'Goverment') {
-      document.getElementById('reportLink').href = '/all-emmision'
-      document.getElementById('reportLinkBtn').href = '/all-emmision'
-      document.getElementById('co2-update').style.display = 'none'
-      document.getElementById('co2-update-btn').style.display = 'none'
-    }
+    document.getElementById('wallet-id').innerHTML = "Wallet ID : " + cookies[0].split('=')[1]
   </script>
 </body>
 
