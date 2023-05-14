@@ -46,3 +46,5 @@ HTML/CSS
 ```
 
 ## Reference Links
+Youtube Link - 
+Medium Blog - https://medium.com/@techcreed.coders/photoblocks-empowering-photographers-with-blockchain-and-nfts-c04389929a19
