@@ -58,10 +58,11 @@
   </header><!-- End Header -->
   <div class="row" style="display: flex;flex-wrap: wrap;height: 50%;justify-content: center;">
   <% for(var i=0; i < walletImages.length; i++) { %>
-    <div class="card col-md-4" style="width: 420px;height: 420px;margin: 12px;">
+    <div class="card col-md-4" style="width: 420px;height: 520px;margin: 12px;"">
         <img style="padding: 8px;" height= 320px; class="card-img-top" src="http://127.0.0.1:9090/ipfs/<%=walletImages[i].img_hash%>" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=walletImages[i].img_description%></h5>
+          <h5 class="card-title"><span style="color:aquamarine">Hash :</span> <%=walletImages[i].img_hash%></h5>
           <a href="#" class="btn btn-primary">Mint NFT</a>
         </div>
       </div>
