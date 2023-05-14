@@ -1,12 +1,15 @@
 require('dotenv').config()
 const express = require('express')
 const cookieParser = require("cookie-parser")
+const fileUpload = require('express-fileupload');
 
 const app = express()
+
 
 app.set('view engine', 'ejs')
 
 // global middleware
+app.use(fileUpload());
 app.use(express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
